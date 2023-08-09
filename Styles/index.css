@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header{
+    display: flex;
+    background-color: #0e76d1;
+    padding: 28px 9px;
+    /* justify-content: space-around; */
+}
+
+.logo{
+    padding: 0 16px;
+}
+
+.body{
+    height: 60vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.544), rgba(0, 0, 0, 0.542)), url(./MIKEWORK1.jpg);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-name: example;
+    animation-fill-mode: forwards;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes example{
+    from {background-image: url(./logo3.png);}
+    to {background-image:  url(./MIKEWORK1.jpg);}
+    /* linear-gradient(rgba(0, 0, 0, 0.544), rgba(0, 0, 0, 0.542)), */
+}
+
+.body h5{
+    font-size: 1.3em;
+    text-align: center;
+    /* padding: 20% 0; */
+    color: aliceblue;
+    background-color: rgba(0, 0, 255, 0.881);
+    height: 12%;
+    width: 100vw;
+    /* margin:; */
+    position: absolute;
+    top: 42%;
+}
+
+/* ===BODY 1=== */
+
+.body-1{
+    height:100vh;
+    background-image: linear-gradient(#fcfcfc8f, #fcfcfca3), url(./MIKEWORK1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 9%;
+}
+
+.body-1 h4{
+    color: rgb(14, 14, 125);
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.body-1 p{
+    font-weight: lighter;
+    text-align: center;
+    padding: 6% 0;
+    font-weight: 600;
+}
+
+/* ===BODY 2=== */
+
+.body-2{
+    background-image: linear-gradient(rgba(8, 23, 161, 0.988), rgba(77, 71, 239, 0.6));
+    height: 100vh;
+    padding:10% 8%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.body-2 section{
+    padding: 4% 0;
+    color: #fff;
+    align-items: center;
+}
+
+.body-2 section h4{
+    padding: 0 30%;
+    text-transform: uppercase;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.body-2 section p{
+    text-align: center;
+    padding: 4% 0;
+}
+
+.body-2 section h4, p{
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: right;
+}
+
+/* ===BODY 3=== */
+
+.body-3 h2, .service-1{
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 0;
+}
+
+.body-3 h2{
+    padding: 10%;
+    font-size: 3em;
+    color: rgb(5, 5, 91);
+    text-align: center;
+}
+
+.body-3 .service-1 i{
+    font-size: 2em;
+    padding: 2% 0;
+    color: #0e76d1;
+    /* animation-fill-mode: forwards; */
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease-in-out; */
+}
+
+.body-3 .service-1 .images{
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    color: #000;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(#fcfcfc00, #fcfcfc00), url(../Images/MIKEWORK5.jpg);
+}
+
+.body-3 img{
+    padding: 5%;
+}
+
+.body-3 h3{
+    font-size: 1.6em;
+    padding: 10px 0;
+}
+
+.body-3 p{
+    width: 95%;
+    text-align: center;
+    gap: 5px;
+    line-height: 29px;
+}
+
+/* ===BIDY 4=== */
+
+.body-4 h2, .contact, .contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-4 h2{
+    font-size: 3em;
+    font-weight: bold;
+    padding: 5%;
+    color: darkblue;
+}
+
+.body-4 .contact-us{
+    padding: 3% 0;
+}
+
+.body-4 .contact{
+    background-image: linear-gradient(rgba(0,0,225,0.5), rgba(0,0,225,0.5)), url(./MIKEWORK1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 14% 0;
+}
+
+.body-4 .contact-us, .head, .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 70vh; */
+    width: 80%;
+    background-color: rgb(8, 8, 30);
+    color: #fff;
+}
+
+.body-4 .head{
+    padding: 5% 0;
+    font-size: 1.8em;
+}
+
+.body-4 .para{
+    text-align: center;
+    width: 80%;
+    padding: 6% 0;
+}
+
+.body-4 .icon{
+    flex-direction: column;
+    color: #000;
+    /* background-color: #fff; */
+    border-radius: 8px;
+    /* padding: 0 4px; */
+}
+
+.body-4 .icon i{
+    padding: 4px 4px;
+    /* height: 30px; */
+    background-color: #fff;
+    border-radius: 10px;
+    border-radius: 9px;
+    /* height: auto; */
+}
+
+/* ===BODY 41=== */
+
+.body-41 .address-1{
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.body-41 .address-1 i{
+    background-color: #fff;
+    color: darkblue;
+    padding: 2%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+
+.body-41 .address-1 p{
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* ===BODY 42=== */
+
+.body-42{
+    border: 4px solid #fff;
+    height: 40vh;
+    width: 70vw;
+    border-radius: 8px;
+}
+
+/* ===BODY 5=== */
+
+.body-5 .heading-1, .heading-2{
+    /* align-items: center;
+    justify-content: center; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-1 h2{
+    font-size: 2.4em;
+    padding: 3% 0;
+    color: darkblue;
+}
+
+.heading-1 i{
+    font-size: 2em;
+    color: blue;
+}
+
+.heading-2 img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+
+/* ===FOOTER=== */
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    padding: 0.7em 0;
+    border-radius: 9px;
+    /* align-items: center; */
+    /* box-shadow: 0 0 0 0.5em #--80e76d162; */
+}
+
+footer marquee{
+    background-color: aqua;
+    /* padding: 0 10px; */
+    margin: 0 4%;
+    font-size: 1.1em;
+    border-radius: 5px;
+    box-shadow: 0 0 0.5em #000;
+    color: blue;
+    font-weight: bold;
+}
+
+footer .footer1{
+    color: #fff;
+    padding: 5px 0;
+}
